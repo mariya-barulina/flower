@@ -1,0 +1,82 @@
+.aside
+    &_promo
+        max-width: 250px
+        position: absolute
+        right: 0
+        top: 20px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        text-align: right
+        z-index: 10
+    &__blue-text
+        @include blue-text
+        &:hover
+            color: $main-color
+    &__mini-text
+        @include white-text
+        font-weight: 300
+        font-size: 10px
+        line-height: 15px
+        margin-top: 4px
+    address
+        margin-bottom: 0
+    &__address-block
+        margin-top: 26px
+    &__social-media
+        margin-top: 60px
+        background: rgba(0, 0, 0, 0.2)
+        border-radius: 10px
+        backdrop-filter: blur(20px)
+        padding-top: 18px
+        padding-bottom: 18px
+        width: 60px
+        height: 154px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        &_horizontal
+            flex-direction: row
+            width: 180px
+            margin-top: 0
+            padding-top: 0
+            padding-bottom: 0
+            align-items: flex-end
+            background: none
+            .aside__link
+                width: 40px
+                height: 40px
+            &_footer
+                width: 118px
+                height: 24px
+                .aside__link
+                    width: 24px
+                    height: 24px 
+    &__link
+        display: block
+        width: 24px
+        height: 24px
+        img
+            display: block
+            width: 100%
+    &__phone-block
+        margin-top: 184px
+    &__blue-text_16px
+        font-size: 16px
+    &__btn
+        margin-top: 7px
+        width: 180px
+        height: 40px
+        background: none
+        background: rgba(0, 0, 0, 0.2)
+        backdrop-filter: blur(20px)
+        border: none
+        border-radius: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        @include blue-text
+        img
+            margin-right: 8px
+

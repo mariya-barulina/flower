@@ -1,0 +1,103 @@
+.popular
+    background-color: #000
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        width: 571.28px
+        height: 396.43px
+        left: 27%
+        border-radius: 35%
+        background: #7D2253
+        filter: blur(133px)
+        transform: rotate(32.83deg)
+        top: 600px
+        z-index: 0
+    &::before
+        content: ''
+        position: absolute
+        width: 1500px
+        height: 300px
+        top: 600px
+        left: -800px
+        background: rgba(67, 255, 210, 0.47)
+        filter: blur(133px)
+        transform: rotate(32.83deg)
+        border-radius: 35%
+        z-index: 0
+    .title
+        position: relative
+        z-index: 2
+    &__subheader
+        @include white-text
+        font-size: 20px
+        font-weight: 300
+        text-transform: none
+        text-align: center
+        position: relative
+        z-index: 2
+    &__slider
+        margin: 0 auto
+        position: relative
+        margin-top: 86px
+        z-index: 2
+    .slick-list
+        width: calc( 100% + 9px )
+        height: 599px
+        display: grid
+        align-items: end
+    .slick-slide
+        margin: 0 15px
+    .slick-next, .slick-prev
+        background: none
+        border: none
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+    .slick-prev
+        left: -100px
+        &:focus
+            outline: none
+        &:active
+            img
+                transform: scale(0.9)
+    .slick-next
+        right: -100px
+        &:focus
+            outline: none
+        &:active
+            img
+                transform: scale(0.9)
+    &__catalog
+        display: flex
+        align-items: center
+        width: 250px
+        margin-top: 60px
+        font-family: 'Oswald'
+        font-weight: 700
+        font-size: 12px
+        letter-spacing: 0.1em
+        text-decoration-line: underline
+        text-transform: uppercase
+        color: #D978AC
+        position: relative
+        z-index: 2
+        img
+            display: block
+            width: 40px
+            height: 100%
+            margin-left: 6px
+            transition: all 0.3s
+        &:hover
+            color: #D978AC
+            img
+                width: 50px
+    &__bg
+        display: block
+        position: absolute
+        top: 23px
+        right: 0
+        z-index: 1
+        width: 974px
+        height: 760px
+

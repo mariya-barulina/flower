@@ -1,0 +1,39 @@
+.descr
+    font-family: 'Oswald'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 21px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: #FFFFFF
+    &_order
+        margin-top: 12px
+    &_occasion-header
+        margin-bottom: 40px
+    &_occasion-ul
+        padding: 0
+        position: relative
+    &_occasion-li
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 40px
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                background: url("../img/icons/bluearrow.svg") center center/50% no-repeat
+                width: 20px
+                height: 60px
+                left: -31px
+                bottom: -60px
+    &_questions
+        width: 255px
+        justify-self: right
+        position: relative
+        @include divider
+        &::before
+            background-color: #43FFD2
+            top: -54px
+            
+                

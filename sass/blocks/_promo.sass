@@ -1,0 +1,82 @@
+.promo
+    height: 1244px
+    background: url("../img/bg/lightbg.png") center center/cover no-repeat 
+    position: relative
+    .container
+        position: relative
+    &__layer
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        &::before
+            content: ''
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 32%)
+            position: absolute
+            top: 0
+            left: 0
+        img
+            width: 100%
+            height: 975px
+            object-fit: cover
+    &__lover, &__flower
+        font-family: 'Cormorant'
+        font-weight: 300
+        font-size: 200px
+        line-height: 242px
+        letter-spacing: 0.2em
+        text-transform: uppercase
+        color: #FFFFFF
+        text-align: center
+        position: absolute
+        left: 50%
+        transform: translateX(-48%)
+    &__lover
+        top: 93px
+    &__flower
+        top: 246px
+        z-index: 6
+    &__descr
+        position: absolute
+        top: 488px
+        z-index: 6
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 30px
+        text-align: center
+        letter-spacing: 0.02em
+        color: #FFFFFF
+        left: 50%
+        transform: translateX(-48%)
+    &__btn
+        position: absolute
+        top: 565px
+        z-index: 6
+        left: 50%
+        transform: translateX(-48%)
+        width: 220px
+        height: 50px
+        border: none
+        background-color: $main-color
+        font-family: 'Oswald'
+        font-weight: 700
+        font-size: 12px
+        line-height: 18px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #000000
+        transition: all 0.1s
+        &:hover
+            background-color: #000
+            color: $main-color
+    
+
+    
+        
+
+    

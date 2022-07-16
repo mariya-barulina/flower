@@ -1,0 +1,67 @@
+.instagram
+    background-color: #000
+    padding: 261px 0 200px 0
+    position: relative
+    height: 621px
+    overflow: hidden
+    z-index: 1
+    .container
+        display: flex
+        justify-content: space-between
+        position: relative
+        &:before
+            content:''
+            position: absolute
+            width: 354px
+            height: 364px
+            right: -170px
+            background: url('../img/image/roseellipse.png') center center/cover no-repeat
+        &:after
+            content: 'INSTAGRAM'
+            position: absolute
+            left: -177px
+            @include big-figures
+            z-index: -1
+            top: -19px
+    &__photos
+        max-width: 730px
+        display: grid
+        grid-template-columns: repeat(auto-fit, 160px)
+        grid-auto-rows: 160px
+        column-gap: 30px
+    &__photo
+        img
+            width: 100%
+    &__sign
+        width: 305px
+        height: 121px
+        position: absolute
+        left: 751px
+        top: -61px
+        img
+            width: 100%
+            height: 100%
+    &__divider
+        position: absolute
+        bottom: 59px
+        width: 305px
+        height: 0.5px
+        background: $main-color
+
+    &:before
+        @include bg-figures
+        width: 99.59px
+        height: 211.05px
+        filter: blur(100px)
+        top: 503px
+        left: 0
+        background: $main-color
+    &:after
+        @include bg-figures
+        width: 879.44px
+        top: 650px
+        height: 211.05px
+        filter: blur(100px)
+        left: 645.97px
+        transform: rotate(21.1deg)
+        background: $main-color

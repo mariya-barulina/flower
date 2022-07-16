@@ -1,0 +1,49 @@
+@mixin blue-text
+    font-family: 'Oswald'
+    font-weight: 400
+    font-size: 14px
+    line-height: 21px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: $main-color
+
+@mixin white-text
+    font-family: 'Oswald'
+    font-weight: 400
+    font-size: 14px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: $text-color
+    
+@mixin big-figures
+    font-family: 'Oswald'
+    font-style: normal
+    font-weight: 700
+    font-size: 200px
+    line-height: 296px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: rgba(255, 255, 255, .03)
+    position: absolute
+    z-index: 1
+
+@mixin bg-figures
+    content: ''
+    position: absolute
+    border-radius: 35%
+    filter: blur(133px)
+    transform: rotate(32.83deg)
+    background: #7D2253
+
+@mixin divider
+    &::before
+        content: ''
+        position: absolute
+        height: 1px
+        width: 100%
+        background-color: #D978AC
+    
+    
+    
+
+    
